@@ -1,0 +1,19 @@
+{
+  "name": "base-apparel-coming-soon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ax-cd/base-apparel-coming-soon-challenge.git"
+  },
+  "author": "Ax-cd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ax-cd/base-apparel-coming-soon-challenge/issues"
+  },
+  "homepage": "https://github.com/Ax-cd/base-apparel-coming-soon-challenge#readme"
+}
