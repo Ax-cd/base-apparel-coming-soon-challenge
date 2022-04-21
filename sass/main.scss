@@ -1,4 +1,3 @@
-html {
-    background-color: pink;
-    color: green;
-}
+// don't forget to add style compressed in script
+// And Autoprefixer
+@use 'elements/page';
