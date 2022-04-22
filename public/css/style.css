@@ -24,6 +24,9 @@
   box-shadow: 5px 5px 10px hsla(0deg, 6%, 24%, 0.5);
   cursor: pointer;
 }
+.form__btn:hover {
+  background: hsl(0deg, 36%, 70%);
+}
 
 * {
   box-sizing: border-box;
@@ -37,7 +40,7 @@ html {
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  background-color: linear-gradient(135deg, hsl(0deg, 0%, 100%) to hsl(0deg, 100%, 98%));
+  background-color: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
 }
 
 main {
@@ -47,6 +50,13 @@ main #logo {
   width: 25%;
   max-width: 40%;
   margin: 0.5rem 0 2rem 2.5rem;
+}
+@media screen and (min-width: 45em) {
+  main {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .main {
