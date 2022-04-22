@@ -14,8 +14,11 @@
             <img id="logo" src="./public/images/logo.svg" alt="Logo">
         </header>
         <div class="hero">
-            <img class="hero__img--small" src="public/images/hero-mobile.jpg" alt="A woman in a salmon shirt holding her hand near her face.">
-            <img class="hero__img--big" src="public/images/hero-desktop.jpg" alt="A woman in a salmon shirt holding her hand near her face.">
+            <picture>
+                <source media="(min-width:70em)" srcset="public/images/hero-desktop.jpg">
+                <source media="(min-width:20em)" srcset="public/images/hero-mobile.jpg">
+                <img src="/public/images/hero-mobile.jpg" alt="A woman in a salmon shirt holding her hand near her face.">
+            </picture>
         </div>
         <section class="main">
             <h1 class="main__title">We're coming soon</h1>
