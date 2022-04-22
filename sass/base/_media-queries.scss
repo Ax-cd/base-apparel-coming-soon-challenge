@@ -2,3 +2,8 @@
 
 // - Mobile: 375px
 // - Desktop: 1440px
+@mixin desktop {
+    @media screen and (min-width: 45em) {
+        @content;
+    }
+}
