@@ -10,8 +10,40 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   font-family: "Josefin Sans", sans-serif;
+  background-color: linear-gradient(135deg, hsl(0deg, 0%, 100%) to hsl(0deg, 100%, 98%));
+}
+
+main {
+  padding: 2rem 0;
+}
+main #logo {
+  width: 25%;
+  max-width: 40%;
+  margin: 0.5rem 0 2rem 2.5rem;
+}
+
+.main {
+  margin: 5rem 8rem 3rem;
+  color: hsl(0deg, 36%, 70%);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.main__title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.5rem;
+  padding-bottom: 1rem;
+}
+.main__title--highlight {
+  font-weight: 600;
+  color: hsl(0deg, 6%, 24%);
+}
+.main__message {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
