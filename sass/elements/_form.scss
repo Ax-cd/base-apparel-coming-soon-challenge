@@ -40,5 +40,10 @@
         left: -40px;
         box-shadow: 5px 5px 10px hsla(0, 6%, 24%, 0.5);
         cursor: pointer;
+
+        &:hover {
+            // fix color
+            background: $desat-red;
+        }
     }
 }
