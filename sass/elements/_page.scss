@@ -33,7 +33,7 @@ main {
 
 .main {
     // border: 2px solid green;
-    margin: 5rem 8rem 3rem;
+    margin: 5rem 2rem 3rem;
     // margin: 2rem 5rem;
     color: $desat-red;
     font-size: 1rem;
@@ -46,8 +46,8 @@ main {
         font-weight: 300;
         text-transform: uppercase;
         line-height: 1;
-        letter-spacing: 0.5rem;
-        padding-bottom: 1rem;
+        letter-spacing: 0.8rem;
+        margin-bottom: 1.5rem;
 
         &--highlight {
             font-weight: 600;
@@ -56,6 +56,9 @@ main {
     }
 
     &__message {
-        font-size: 1rem;
+        // border: 2px solid palevioletred;
+        // font needs to be bigger => design: almost touch the sides
+        font-size: 1.2rem;
+        margin: 0 3.5rem;
     }
 }

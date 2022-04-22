@@ -24,7 +24,7 @@ main #logo {
 }
 
 .main {
-  margin: 5rem 8rem 3rem;
+  margin: 5rem 2rem 3rem;
   color: hsl(0deg, 36%, 70%);
   font-size: 1rem;
   line-height: 1.5;
@@ -35,15 +35,16 @@ main #logo {
   font-weight: 300;
   text-transform: uppercase;
   line-height: 1;
-  letter-spacing: 0.5rem;
-  padding-bottom: 1rem;
+  letter-spacing: 0.8rem;
+  margin-bottom: 1.5rem;
 }
 .main__title--highlight {
   font-weight: 600;
   color: hsl(0deg, 6%, 24%);
 }
 .main__message {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin: 0 3.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
