@@ -13,6 +13,7 @@
         <header>
             <img id="logo" src="./public/images/logo.svg" alt="Logo">
         </header>
+        <!-- move picture in section? -->
         <picture class="hero">
             <source media="(min-width:70em)" srcset="public/images/hero-desktop.jpg">
             <source media="(min-width:20em)" srcset="public/images/hero-mobile.jpg">
@@ -23,11 +24,11 @@
             <p class="main__message">Hello fellow shoppers! We're currently building our new fashion store. 
             Add your email below to stay up-to-date with announcements and our launch deals.</p>      
         
-            <form class="form" action="" method="post">
+            <form id="form" class="form" action="" method="post">
                 <label for="email"></label>
                 <!-- add pattern regex? -->
-                <input class="form__input" id="email" name="email" type="email" value="Email Address">
-                <button class="form__btn" type="submit"><img src="public/images/icon-arrow.svg"></button>
+                <input id="email" class="form__input" name="email" type="email" value="Email Address">
+                <button id="btn" class="form__btn" type="submit"><img src="public/images/icon-arrow.svg"></button>
             </form>
         </section>
     </main>
