@@ -10,6 +10,7 @@ html {
     font-size: 62.5%;
 }
 body {
+    // border: 2px solid red;
     // font-size: 1.6rem;
     font-family: $font-family;
     background-color: $linear-white;
@@ -22,24 +23,38 @@ main {
 
     #logo {
         width: 25%;
-        max-width: 40%;
+        // max-width: 40%;
         margin: 0.5rem 0 2rem 2.5rem;
+
+        // @include desktop {
+        //     width: 54rem;
+        // }
     }
 
     // .hero {
     //     border: 2px solid purple;
     //     // object-fit for img?
     // }
+    @include desktop {
+        border: 2px solid blue;
+        // background-color: blue;
+        display: flex;
+        // flex-direction: row;
+    }
 }
 
 .main {
     // border: 2px solid green;
-    margin: 5rem 2rem 3rem;
+    // margin: 5rem 2rem 3rem;
     // margin: 2rem 5rem;
     color: $desat-red;
     font-size: 1rem;
     line-height: 1.5;
     text-align: center;
+
+    // &__picture {
+    //     border: 2px solid purple;
+    // }
 
     &__title {
         // border: 2px solid yellow;
@@ -48,7 +63,8 @@ main {
         text-transform: uppercase;
         line-height: 1;
         letter-spacing: 0.8rem;
-        margin-bottom: 1.5rem;
+        padding: 0 2rem 0;
+        margin-top: 5rem;
 
         &--highlight {
             font-weight: 600;
@@ -58,10 +74,14 @@ main {
 
     &__message {
         // border: 2px solid palevioletred;
-        // font needs to be bigger => design: almost touch the sides
-        font-size: 1.2rem;
-        margin: 0 3.5rem;
+        font-size: 1.5rem;
+        padding: 0 2rem 0;
+        margin: 1.5rem 0 3rem;
     }
+
+    // @include desktop {
+    //     background-color: red;
+    // }
 }
 
 .attribution {
