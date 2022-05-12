@@ -10,54 +10,61 @@ html {
     font-size: 62.5%;
 }
 body {
-    // border: 2px solid red;
-    // font-size: 1.6rem;
+
     font-family: $font-family;
     background-color: $linear-white;
-    // bg-pattern for desktop
+    // bg-pattern for desktop => not working
+    @include desktop {
+        background-image: url(/public/images/bg-pattern-desktop.svg);
+        background-size: cover;
+    }
 }
 
-main {
-    // border: 2px solid blue;
+
+main { //main tag
     padding: 2rem 0;
 
     #logo {
         width: 25%;
-        // max-width: 40%;
         margin: 0.5rem 0 2rem 2.5rem;
 
-        // @include desktop {
-        //     width: 54rem;
-        // }
+        @include desktop {
+            border: 2px solid green;
+            width: 20em;
+        }
     }
 
-    // .hero {
-    //     border: 2px solid purple;
-    //     // object-fit for img?
-    // }
+    // object-fit for img?
     @include desktop {
         border: 2px solid blue;
-        // background-color: blue;
-        display: flex;
-        // flex-direction: row;
+        display: grid;
+
     }
 }
 
-.main {
-    // border: 2px solid green;
-    // margin: 5rem 2rem 3rem;
-    // margin: 2rem 5rem;
+.img {
+    // border: 2px solid purple;
+    &--desktop {
+        display: none;
+    }
+
+    @include desktop {
+       &--mobile {
+           display: none;
+       }
+       &--desktop {
+           display: block;
+       }
+    }
+}
+
+.main { //main section
     color: $desat-red;
     font-size: 1rem;
     line-height: 1.5;
     text-align: center;
 
-    // &__picture {
-    //     border: 2px solid purple;
-    // }
-
     &__title {
-        // border: 2px solid yellow;
         font-size: 3.5rem;
         font-weight: 300;
         text-transform: uppercase;
@@ -73,15 +80,15 @@ main {
     }
 
     &__message {
-        // border: 2px solid palevioletred;
         font-size: 1.5rem;
         padding: 0 2rem 0;
         margin: 1.5rem 0 3rem;
     }
 
-    // @include desktop {
-    //     background-color: red;
-    // }
+    @include desktop {
+        border: 2px solid red;
+
+    }
 }
 
 .attribution {
