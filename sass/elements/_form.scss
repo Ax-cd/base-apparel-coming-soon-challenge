@@ -31,6 +31,7 @@
 
     &::placeholder {
       color: $desat-red;
+      font-size: 1.6rem;
     }
 
     &:invalid {
@@ -52,6 +53,17 @@
     &:hover {
       // fix color + transition
       background: $desat-red;
+    }
+  }
+
+  @include desktop {
+    // border: 2px solid red;
+    max-width: 95%;
+    margin: 0;
+
+    &__btn {
+      padding: 0.8em 3em;
+      border-radius: 30px;
     }
   }
 }
