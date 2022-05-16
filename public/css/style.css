@@ -33,7 +33,7 @@
 .form__btn:hover {
   background: hsl(0deg, 36%, 70%);
 }
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   .form {
     max-width: 95%;
     margin: 0;
@@ -58,13 +58,18 @@ body {
   font-family: "Josefin Sans", sans-serif;
   background-color: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
 }
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   body {
     background-image: url("../../public/images/bg-pattern-desktop.svg");
   }
 }
 
-@media screen and (min-width: 45em) {
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 60em) {
   .picture {
     grid-row: span 2;
   }
@@ -77,13 +82,13 @@ main #logo {
   width: 25%;
   margin: 0.5rem 0 2rem 2.5rem;
 }
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   main #logo {
     width: 15em;
     margin: 5rem 0 0 12rem;
   }
 }
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   main {
     padding: 0;
     display: grid;
@@ -116,7 +121,7 @@ main #logo {
   padding: 0 2rem 0;
   margin: 1.5rem 0 3rem;
 }
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   .main {
     text-align: left;
     margin: 10rem;

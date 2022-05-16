@@ -19,6 +19,9 @@ body {
 }
 
 .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include desktop {
         grid-row: span 2;
     }
