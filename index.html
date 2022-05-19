@@ -28,10 +28,11 @@
         
             <form id="form" class="form" action="" method="post">
                 <label for="email"></label>
-                <!-- add pattern regex? -->
                 <input id="email" class="form__input" name="email" type="email" placeholder="Email Address">
-                <!-- <img class="error-icon" src="/public/images/icon-error.svg" alt=""> -->
-                <button id="btn" class="form__btn" type="submit"><img src="public/images/icon-arrow.svg" alt=""></button>
+                <!-- pattern="" required <= how to change color with sass when required is placed? -->
+                <img class="form__error-icon" src="public/images/icon-error.svg" alt="">
+                <button id="btn" class="form__btn" type="submit"><img src="public/images/icon-arrow.svg" alt=""></button><br>
+                <p class="form__error-msg">Please provide a valid email</p>
             </form>
         </section>
     </main>

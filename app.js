@@ -1,22 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Hello World!");
-
   const form = document.getElementById("form");
   const email = document.getElementById("email");
-  let input = email.value;
-  //error msg "Please provide a valid email" + error icon when input field is empty || email address not formatted correctly
 
   form.addEventListener("submit", (event) => {
-    // event.preventDefault();
-    console.log(input);
+    event.preventDefault(); //stop form submission
+    let emailAdress = email.value;
+
+    if (!checkValid(emailAdress) || email === "") {
+      form.classList.add("error");
+    } else {
+      form.classList.remove("error");
+    }
   });
 
-  // checkValidEmail = (input) => {
-  //   let
-  // };
-
-  // let errorMsg = document.createElement("span");
-  // errorMsg.id = "error-msg";
-  // errorMsg.innerHTML = "Please provide a valid email";
-  // document.body.appendChild(errorMsg);
+  function checkValid(email) {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
 });
