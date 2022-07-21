@@ -9,36 +9,32 @@
     <title>Base Apparel coming soon page | Frontend Mentor Challenge</title>
 </head>
 <body>
-
+    <header>
+        <img id="logo" src="./public/images/logo.svg" alt="Base Apparel">
+    </header>
     <main>
-        <header>
-            <img id="logo" src="./public/images/logo.svg" alt="Base Apparel logo">
-        </header>
-
-        <picture class="picture">
+        <picture class="flex picture">
             <source media="(min-width:70em)" srcset="public/images/hero-desktop.jpg">
-            <source media="(min-width:20em)" srcset="public/images/hero-mobile.jpg">
             <img src="/public/images/hero-mobile.jpg" alt="A woman in a salmon shirt holding her hand near her face.">
         </picture>
 
-        <section class="main">
-            <h1 class="main__title">We're <span class="main__title--highlight">coming soon</span></h1>
+        <section class="grid container text-center hero">
+            <h1 class="fs-600 fw-300 letter-spacing uppercase main__title" style="padding-inline: 2rem;">We're <span class="fw-600 accent main__title--highlight">coming soon</span></h1>
             <p class="main__message">Hello fellow shoppers! We're currently building our new fashion store. 
-            Add your email below to stay up-to-date with announcements and our launch deals.</p>      
-        
-            <form id="form" class="form" action="" method="post">
-                <label for="email"></label>
-                <input id="email" class="form__input" name="email" type="email" placeholder="Email Address">
+            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            
+            <form id="form" class="flex form" action="" method="post">
+                <label for="email" class="sr-only">Email</label>
+                <input id="email" class=" form__input" name="email" type="email" placeholder="Email Address">
                 <!-- pattern="" required <= how to change color with sass when required is placed? -->
-                <img class="form__error-icon" src="public/images/icon-error.svg" alt="">
-                <button id="btn" class="form__btn" type="submit"><img src="public/images/icon-arrow.svg" alt=""></button><br>
-                <p class="form__error-msg">Please provide a valid email</p>
+                <!-- <img class="form__error-icon" src="public/images/icon-error.svg" alt=""> -->
+                <button id="btn" class="form__btn" type="submit"><img src="public/images/icon-arrow.svg" alt=""></button>
+                <!-- <p class="form__error-msg">Please provide a valid email</p> -->
             </form>
         </section>
     </main>
-  
     <footer>
-        <p class="attribution">
+        <p class="text-center">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://www.frontendmentor.io/profile/Ax-cd">Ax-cd</a>.
         </p>

@@ -56,8 +56,21 @@ input, button, select {
 
 .container {
   padding: 1rem;
-  margin: 1.5rem auto;
+  margin: 1.5rem auto 0.5rem;
   max-width: 40rem;
+}
+
+.sr-only {
+  /* screen reader */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: no-wrap;
+  border: 0;
 }
 
 /* Colors */
@@ -99,9 +112,44 @@ input, button, select {
   text-transform: uppercase;
 }
 
+.form {
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.form__input {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid hsl(0deg, 36%, 70%);
+  border-radius: inherit;
+  position: relative;
+}
+.form__input::placeholder {
+  color: hsl(0deg, 36%, 70%);
+}
+.form__btn {
+  position: absolute;
+  right: 10px;
+  border: none;
+  border-radius: 35px;
+  background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  box-shadow: 0 3px 9px hsla(0deg, 0%, 60%, 0.6);
+  aspect-ratio: 2.2/1;
+  padding: 1.2rem;
+  display: grid;
+  place-items: center;
+}
+
 #logo {
   padding: 2rem 0;
   margin-left: 1.5rem;
+}
+
+.picture {
+  justify-content: center;
+  gap: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

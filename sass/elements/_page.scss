@@ -1,2 +1,12 @@
 @use '../base/' as *;
 @use './form';
+
+#logo {
+    padding: 2rem 0;
+    margin-left: 1.5rem;
+}
+
+.picture {
+    justify-content: center;
+    gap: 0;
+}
