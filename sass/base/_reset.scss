@@ -1,0 +1,74 @@
+@use "./fonts" as *;
+@use './colors' as *;
+@use './media-queries' as *;
+/*---------------------------*/
+/* Reset                     */
+/*---------------------------*/
+/* Box sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Margins */
+body, h1, h2, p, picture {
+    margin: 0;
+}
+
+/* Body */
+body {
+    font-family: $font-family;
+    color: $desat-red;
+    background-color: $linear-white;
+    line-height: 1.5;
+    min-height: 100vh;
+    @include desktop {
+        background-image: url("../../public/images/bg-pattern-desktop.svg");
+    }
+}
+
+/* Img */
+img, picture {
+    display: block;
+    max-width: 100%;
+}
+
+/* Form elements */
+input, button, select {
+    font: inherit;
+}
+
+
+/*---------------------------*/
+/* Utility classes           */
+/*---------------------------*/
+/* General */
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+/* Colors */
+.accent {
+    color: $dark;
+}
+
+/* Typography */
+.fw-300 {
+    font-weight: $thin;
+}
+.fw-400 {
+    font-weight: $regular;
+}
+.fw-300 {
+    font-weight: $semi-bold;
+}
+.uppercase {
+    text-transform: uppercase;
+}
