@@ -40,6 +40,15 @@ input, button, select {
     font: inherit;
 }
 
+/* Remove animation for people who've turned them off */
+@media (prefers-reduce-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
 
 /*---------------------------*/
 /* Utility classes           */
