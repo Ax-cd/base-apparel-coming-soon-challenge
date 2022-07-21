@@ -24,9 +24,6 @@ body {
     background-color: $linear-white;
     line-height: 1.5;
     min-height: 100vh;
-    @include desktop {
-        background-image: url("../../public/images/bg-pattern-desktop.svg");
-    }
 }
 
 /* Img */
@@ -88,14 +85,6 @@ input, button, select {
 }
 
 /* Typography */
-.fs-400 {
-    font-size: $fs-400;
-}
-.fs-600 {
-    font-size: $fs-600;
-    line-height: 1.2;
-}
-
 .fw-300 {
     font-weight: $thin;
 }
@@ -106,13 +95,6 @@ input, button, select {
     font-weight: $semi-bold;
 }
 
-.letter-spacing {
-    letter-spacing: 8px;
-}
-
-.text-center {
-    text-align: center;
-}
 .uppercase {
     text-transform: uppercase;
 }
