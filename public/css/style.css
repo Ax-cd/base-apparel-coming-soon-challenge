@@ -18,6 +18,7 @@ body, h1, h2, p, picture {
 body {
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0deg, 36%, 70%);
+  font-size: 1rem;
   background-color: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
   line-height: 1.5;
   min-height: 100vh;
@@ -53,12 +54,27 @@ input, button, select {
   gap: var(--gap, 1rem);
 }
 
+.container {
+  padding: 1rem;
+  margin: 1.5rem auto;
+  max-width: 40rem;
+}
+
 /* Colors */
 .accent {
   color: hsl(0deg, 6%, 24%);
 }
 
 /* Typography */
+.fs-400 {
+  font-size: 1rem;
+}
+
+.fs-600 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
 .fw-300 {
   font-weight: 300;
 }
@@ -67,12 +83,25 @@ input, button, select {
   font-weight: 400;
 }
 
-.fw-300 {
+.fw-600 {
   font-weight: 600;
+}
+
+.letter-spacing {
+  letter-spacing: 8px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+#logo {
+  padding: 2rem 0;
+  margin-left: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

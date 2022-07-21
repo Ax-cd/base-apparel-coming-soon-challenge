@@ -20,6 +20,7 @@ body, h1, h2, p, picture {
 body {
     font-family: $font-family;
     color: $desat-red;
+    font-size: $fs-400;
     background-color: $linear-white;
     line-height: 1.5;
     min-height: 100vh;
@@ -54,20 +55,41 @@ input, button, select {
     gap: var(--gap, 1rem);
 }
 
+.container {
+    padding: 1rem;
+    margin: 1.5rem auto;
+    max-width: 40rem; //to adjust if needed
+}
 /* Colors */
 .accent {
     color: $dark;
 }
 
 /* Typography */
+.fs-400 {
+    font-size: $fs-400;
+}
+.fs-600 {
+    font-size: $fs-600;
+    line-height: 1.2;
+}
+
 .fw-300 {
     font-weight: $thin;
 }
 .fw-400 {
     font-weight: $regular;
 }
-.fw-300 {
+.fw-600 {
     font-weight: $semi-bold;
+}
+
+.letter-spacing {
+    letter-spacing: 8px;
+}
+
+.text-center {
+    text-align: center;
 }
 .uppercase {
     text-transform: uppercase;
