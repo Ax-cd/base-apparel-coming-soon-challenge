@@ -21,7 +21,7 @@ body {
     font-family: $font-family;
     color: $desat-red;
     font-size: $fs-400;
-    background-color: $linear-white;
+    background-image: $linear-white;
     line-height: 1.5;
     min-height: 100vh;
 }
@@ -38,7 +38,7 @@ input, button, select {
 }
 
 /* Remove animation for people who've turned them off */
-@media (prefers-reduce-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
 	*, *::before, *::after {
 		animation-duration: 0.01ms !important;
 		animation-iteration-count: 1 !important;
@@ -64,7 +64,7 @@ input, button, select {
 .container {
     padding: 1rem;
     margin: 1.5rem auto .5rem;
-    max-width: 40rem; //to adjust if needed
+    max-width: 40rem;
 }
 
 .sr-only { /* screen reader */
@@ -74,8 +74,8 @@ input, button, select {
 	padding: 0;
 	margin: -1px;
 	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	white-space: no-wrap;
+    clip-path: none;
+	white-space: nowrap;
 	border: 0;
 }
 

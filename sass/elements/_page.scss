@@ -9,4 +9,64 @@
 .picture {
     justify-content: center;
     gap: 0;
+    @include desktop {
+        grid-row: span 3;
+    }
+}
+
+body {
+    @include desktop {
+        background-image: url("../../public/images/bg-pattern-desktop.svg"), $linear-white;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 2fr auto;
+        grid-template-rows: auto 1fr auto;
+    }
+}
+
+header {
+    @include desktop {
+        margin-top: 3rem;
+        padding-left: 6rem;
+    }
+}
+
+main {
+    @include desktop {
+        display:  flex;
+        align-items: center;
+    }
+}
+
+.hero {
+    text-align: center;
+    &__title {
+        font-size: $fs-600;
+        padding-inline: 2rem;
+        letter-spacing: 8px;
+        line-height: 1.2;
+    }
+    & p {
+        font-size: $fs-400;
+    }
+
+    @include desktop {
+        text-align: left;
+        margin-inline: 6rem 10rem;
+        &__title {
+            padding-inline: 0 1rem;
+            font-size: calc(64rem / 16);
+            letter-spacing: 16px;
+        }
+        & p {
+            font-size: calc(20rem / 16);
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    @include desktop {
+        margin-bottom: 1rem;
+    }
 }
