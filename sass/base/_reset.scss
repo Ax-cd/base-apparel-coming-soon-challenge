@@ -57,9 +57,22 @@ input, button, select {
 
 .container {
     padding: 1rem;
-    margin: 1.5rem auto;
+    margin: 1.5rem auto .5rem;
     max-width: 40rem; //to adjust if needed
 }
+
+.sr-only { /* screen reader */
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: no-wrap;
+	border: 0;
+}
+
 /* Colors */
 .accent {
     color: $dark;
