@@ -18,12 +18,12 @@
         &::placeholder {
             color: $desat-red;
         }
-        // &:invalid { // or :invalid::after?
-        //     background-image: url(/public/images/icon-error.svg);
-        //     background-repeat: no-repeat;
-        //     background-position: center right 5.5em;
-        //     outline: 1px solid $soft-red;
-        // }
+        &:invalid {
+            background-image: url(/public/images/icon-error.svg);
+            background-repeat: no-repeat;
+            background-position: center right 5.5em;
+            outline: 1px solid $soft-red;
+        }
     }
 
     &__btn {
@@ -46,16 +46,30 @@
         }
     }
     
-    // &:invalid::after { // or :invalid::after? - work with ::after
-    //     content: 'Please provide a valid email';
-    //     color: $soft-red;
-    //     position: absolute;
-    //     top: 4em;
-    //     left: 1.5em;
-    // }
+    &:invalid::after { //display:none?
+        content: 'Please provide a valid email';
+        color: $soft-red;
+        position: absolute;
+        top: 4em;
+        left: 1.5em;
+    }
 
     @include desktop {
         margin-top: 1rem;
         margin-bottom: 0;
     }
+}
+
+.error-input {
+    background-image: url(/public/images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: center right 5.5em;
+    outline: 1px solid $soft-red;
+}
+.error-msg::after {
+    content: 'Please provide a valid email';
+    color: $soft-red;
+    position: absolute;
+    top: 4em;
+    left: 1.5em;
 }
