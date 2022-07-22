@@ -170,7 +170,9 @@ input, button, select {
 }
 @media screen and (min-width: 60em) {
   .picture {
-    grid-row: span 3;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -179,7 +181,7 @@ input, button, select {
     background-image: url("../../public/images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 40%;
     grid-template-rows: auto 1fr auto;
   }
 }
@@ -195,6 +197,7 @@ input, button, select {
   main {
     display: flex;
     align-items: center;
+    grid-column: span 2;
   }
 }
 
