@@ -168,7 +168,7 @@ input, button, select {
   justify-content: center;
   gap: 0;
 }
-@media screen and (min-width: 60em) { /* img desktop tra 960~1100 is deformed => object-fit not working */
+@media screen and (min-width: 60em) {
   .picture {
     grid-row: span 3;
   }
