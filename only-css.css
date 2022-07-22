@@ -168,7 +168,7 @@ input, button, select {
   justify-content: center;
   gap: 0;
 }
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 85em) {
   .picture {
     position: absolute;
     top: 0;
@@ -176,7 +176,7 @@ input, button, select {
   }
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 85em) {
   body {
     background-image: url("../../public/images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
     background-repeat: no-repeat;
@@ -186,14 +186,14 @@ input, button, select {
   }
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 85em) {
   header {
     margin-top: 3rem;
     padding-left: 8rem;
   }
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 85em) {
   main {
     display: flex;
     align-items: center;
@@ -213,7 +213,7 @@ input, button, select {
 .hero p {
   font-size: 1rem;
 }
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 85em) {
   .hero {
     text-align: left;
     margin-inline: 8rem 10rem;
@@ -231,7 +231,7 @@ input, button, select {
 footer {
   text-align: center;
 }
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 85em) {
   footer {
     margin-bottom: 1rem;
   }
