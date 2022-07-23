@@ -21,15 +21,15 @@ document.addEventListener("DOMContentLoaded", () => {
     return re.test(String(email).toLowerCase());
   }
 
-  // // not working... but why?
+  // not working... but why? => works just fine when "submit" is replaced by "click" or "mouseover"
+  // form.addEventListener("submit", submitEmail);
   // function submitEmail(event) {
+  //   event.preventDefault();
   //   let emailAdress = email.value;
   //   if (!checkValid(emailAdress) || email === "") {
   //     email.classList.add("error-input");
   //     form.classList.add("error-msg");
   //     console.log("invalid email");
   //   }
-  //   event.preventDefault();
   // }
-  // form.addEventListener("submit", submitEmail);
 });
