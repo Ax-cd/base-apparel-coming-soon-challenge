@@ -140,7 +140,6 @@ input, button, select {
 @media screen and (min-width: 60em) {
   .form {
     margin-top: 1rem;
-    margin-bottom: 0;
   }
 }
 
